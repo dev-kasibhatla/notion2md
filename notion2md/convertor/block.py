@@ -255,9 +255,7 @@ def image(info: dict) -> str:
     # name,file_path = downloader(info['url'])
 
     if info["caption"]:
-        return (
-            f"![{info['caption']}]({info['file_path']})\n"
-        )
+        return f"![{info['caption']}]({info['file_path']})"
     else:
         return f"![{info['file_name']}]({info['file_path']})"
 
