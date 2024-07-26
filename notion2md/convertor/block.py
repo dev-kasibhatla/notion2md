@@ -256,7 +256,7 @@ def image(info: dict) -> str:
 
     if info["caption"]:
         return (
-            f"![{info['file_name']}]({info['file_path']})\n\n{info['caption']}"
+            f"![{info['caption']}]({info['file_path']})\n"
         )
     else:
         return f"![{info['file_name']}]({info['file_path']})"
