@@ -254,6 +254,7 @@ def image(info: dict) -> str:
     """
     # name,file_path = downloader(info['url'])
     print(" ---running the new image bock")
+    exit(1)
     if info["caption"]:
         return f"![{info['caption']}]({info['file_path']})"
     else:
