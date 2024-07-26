@@ -253,7 +253,7 @@ def image(info: dict) -> str:
     input: item:dict ={"url":str,"text":str,"caption":str}
     """
     # name,file_path = downloader(info['url'])
-
+    print(" ---running the new image bock")
     if info["caption"]:
         return f"![{info['caption']}]({info['file_path']})"
     else:
